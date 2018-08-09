@@ -17,6 +17,8 @@ if($username==='吉海燕' && $password==='1218'){
 	header('location:love.php?username='.$username);
 }elseif($username==='张兰' && $password==='0718'){
 	header('location:love.php?username='.$username);
+}elseif($username==='白姣' && $password==='0830'){
+	header('location:love.php?username='.$username);
 }else{	
 	alertMsg('输入信息错误，请重新输入','index.html');
 }

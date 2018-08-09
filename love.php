@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<?php $username = $_GET['username']; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>我们的故事</title>
 	    
@@ -50,7 +51,7 @@
                 </div>
                 <div id="clock-box">
                     李家明 <span class="STYLE1">与</span> <?php echo $username; ?> <span class="STYLE1">已经相识了</span>
-                  <div id="clock"><input type="hidden" id="username" value="<?php echo $username; ?>"/></div>
+                    <div id="clock"><input type="hidden" id="username" value="<?php echo $username; ?>"/></div>
                 </div>
                 <canvas id="canvas" width="1100" height="600"></canvas>
             </div>
@@ -195,8 +196,12 @@
                 year=2011;month=6;date=12;
             }else if($('#username').val()=='谭雪莲'){
                 year=2015;month=7;date=24;
+            }else if($('#username').val()=='黄莉'){
+                year=2015;month=8;date=24;
             }else if($('#username').val()=='张兰'){
                 year=2017;month=2;date=18;
+            }else if($('#username').val()=='白姣'){
+                year=2016;month=7;date=12;
             }else{
                 year=2015;month=7;date=24;
             }
